@@ -1,0 +1,143 @@
+.coursesSection {
+  padding: 6rem 0;
+  background-color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.coursesSection.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.courseCard {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border-top: 4px solid #3b82f6;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.courseCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.courseCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.colorblue {
+  border-top-color: #3b82f6;
+}
+
+.colorgreen {
+  border-top-color: #10b981;
+}
+
+.coloramber {
+  border-top-color: #f59e0b;
+}
+
+.colorred {
+  border-top-color: #ef4444;
+}
+
+.colorpurple {
+  border-top-color: #8b5cf6;
+}
+
+.colorteal {
+  border-top-color: #14b8a6;
+}
+
+.courseIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.courseTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.courseDescription {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.courseLink {
+  display: inline-block;
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.courseLink::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.courseLink:hover {
+  color: #2563eb;
+}
+
+.courseLink:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .courseGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
