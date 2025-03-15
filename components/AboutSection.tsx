@@ -37,7 +37,7 @@ export default function AboutSection() {
         <div className={styles.content}>
           <h2 className={styles.title}>About Our School</h2>
           <p className={styles.description}>
-            Founded in 1995, Priyadarshani School has been at the forefront of educational innovation for over 25 years. Our
+            Founded in 1982, Priyadarshani School and Colleage has been at the forefront of educational innovation for over 43 years. Our
             mission is to provide a nurturing environment where students can develop their intellectual, physical, and
             creative potential.
           </p>
@@ -47,7 +47,7 @@ export default function AboutSection() {
           </p>
           <div className={styles.stats}>
             <div className={styles.statItem}>
-              <span className={styles.statNumber}>25+</span>
+              <span className={styles.statNumber}>43+</span>
               <span className={styles.statLabel}>Years of Excellence</span>
             </div>
             <div className={styles.statItem}>

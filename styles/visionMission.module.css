@@ -1,0 +1,93 @@
+/* styles/visionMission.module.css */
+
+.contentWrapper {
+    padding-top: 80px; /* Adjust based on your navbar height */
+    text-align: center; /* Center the main heading */
+  }
+  
+  .mainHeading {
+    font-size: 36px;
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 40px; /* Space below the main heading */
+  }
+  
+  .cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: #f1f9fc; /* Light background for the card */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 40px 30px;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333; /* Darker text color for contrast */
+    position: relative;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+    max-height: 600px; /* Limit card height */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    opacity: 0.9; /* Slight transparency on hover */
+  }
+  
+  .cardContent {
+    position: relative;
+    z-index: 1;
+    max-height: 100%;
+    overflow-y: auto; /* Scrollable content inside the card */
+  }
+  
+  .cardIcon {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter background for the icon */
+    border-radius: 50%;
+    padding: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .card h2 {
+    color: #007bff; /* Blue color for the card title */
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Darker text color */
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .card.visionCard {
+    background-color: #e0f7fa; /* Light cyan for Vision card */
+  }
+  
+  .card.missionCard {
+    background-color: #f1f8e9; /* Light green for Mission card */
+  }
+  
+  /* Add a dark overlay for better text visibility */
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* Light overlay */
+    border-radius: 12px;
+    z-index: 0;
+  }
+  

@@ -92,6 +92,8 @@ import Link from "next/link"
 import { Menu, BookOpen, ChevronDown } from "lucide-react"
 import styles from "@/styles/navbar.module.css"
 
+import VisionMission from "@/app/vissionmission/page";  // Keeping the import
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -120,7 +122,7 @@ export default function Navbar() {
           <Link href="/" className={styles.logo}>
             <BookOpen className={styles.logoIcon} />
             <span className={styles.logoText}>
-            Priyadarshani<span className={styles.highlight}>School</span>
+              Priyadarshani<span className={styles.highlight}></span>
             </span>
           </Link>
         </div>
@@ -144,6 +146,11 @@ export default function Navbar() {
               <li>
                 <Link href="#why-choose-us" onClick={() => setAboutDropdown(false)}>
                   Why Choose Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/vissionmission" onClick={() => setAboutDropdown(false)}>
+                  Vision & Mission
                 </Link>
               </li>
             </ul>
@@ -171,9 +178,6 @@ export default function Navbar() {
         </ul>
 
         <div className={`${styles.actionButtons} ${isOpen ? styles.active : ""}`}>
-          {/* <Link href="/login" className={styles.loginButton}>
-            Student Portal
-          </Link> */}
           <Link href="/register" className={styles.registerButton}>
             Apply Now
           </Link>

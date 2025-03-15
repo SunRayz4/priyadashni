@@ -14,7 +14,7 @@ export default function Footer() {
               <BookOpen className={styles.logoIcon} />
               <h3 className={styles.footerLogo}>
               Priyadarshani
-              <span className={styles.highlight}>School</span>
+              <span className={styles.highlight}></span>
               </h3>
             </div>
             <p className={styles.footerDescription}>
@@ -23,7 +23,7 @@ export default function Footer() {
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
                 <Phone size={16} className={styles.contactIcon} />
-                <span>(123) 456-7890</span>
+                <span>+91 89567 88450 | +91 70660 64189</span>
               </div>
               <div className={styles.contactItem}>
                 <Mail size={16} className={styles.contactIcon} />
@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div className={styles.contactItem}>
                 <MapPin size={16} className={styles.contactIcon} />
-                <span>Priyadarshani School,Bhosari
+                <span>Priyadarshani ,Bhosari
 
 Bhosari-413171</span>
               </div>

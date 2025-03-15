@@ -91,8 +91,8 @@ export default function ContactSection() {
               <Phone className={styles.infoIcon} />
               <div>
                 <h3 className={styles.infoTitle}>Call Us</h3>
-                <p className={styles.infoText}>(123) 456-7890</p>
-                <p className={styles.infoText}>(123) 456-7891</p>
+                <p className={styles.infoText}>+91 89567 88450 </p>
+                <p className={styles.infoText}>+91 70660 64189</p>
               </div>
             </div>
 
