@@ -93,6 +93,9 @@ import { Menu, BookOpen, ChevronDown } from "lucide-react"
 import styles from "@/styles/navbar.module.css"
 
 import VisionMission from "@/app/vissionmission/page";  // Keeping the import
+import HistoryOfPraiyadarshani from "@/app/historyOfPriyadarshani/page";
+import Teachers from '@/app/teachers/page' ;
+import Children from '@/app/children/page';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -151,6 +154,26 @@ export default function Navbar() {
               <li>
                 <Link href="/vissionmission" onClick={() => setAboutDropdown(false)}>
                   Vision & Mission
+                </Link>
+              </li>
+              <li>
+                <Link href="/historyOfPriyadarshani" onClick={() => setAboutDropdown(false)}>
+                History Of PriyaDarshani
+                </Link>
+              </li>
+              <li>
+                <Link href="/teachers" onClick={() => setAboutDropdown(false)}>
+                Teachers
+                </Link>
+              </li>
+              <li>
+                <Link href="/parents" onClick={() => setAboutDropdown(false)}>
+             Parents
+                </Link>
+              </li>
+              <li>
+                <Link href="/children" onClick={() => setAboutDropdown(false)}>
+             Children
                 </Link>
               </li>
             </ul>

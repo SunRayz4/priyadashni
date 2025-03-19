@@ -438,3 +438,17 @@
   background-color: #3b82f6;
   color: white;
 }
+.registerButton {
+  padding: 0.5rem 3rem;
+  background-color: #3b82f6; /* Blue background */
+  border-radius: 0.25rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.registerButton:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
